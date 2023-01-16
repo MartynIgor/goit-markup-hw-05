@@ -823,7 +823,17 @@ body {
 .socialicon-footer {
     width: 24px;
     height: 24px;
-    fill: rgba(255, 255, 255, 0.1);
+    fill: var(--grey);
+}
+
+.social-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
 
 .socialfooter-all {
