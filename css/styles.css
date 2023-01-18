@@ -681,7 +681,7 @@ body {
 
 .button-filter {
     cursor: pointer;
-    background: var(--border-color);
+    background-color: var(--border-color);
     border: 1px solid var(--light-grey);
     border-radius: 4px;
     color: var(--blue);
@@ -705,7 +705,13 @@ body {
 .portfolio-photo {
     background: var(--white);
     flex-basis: auto;
-    width: calc((100% - 48px) / 3)
+    width: calc((100% - 48px) / 3);
+    box-shadow: 0px 1px 6px rgb(46 47 66 / 8%);
+}
+
+.portfolio-photo:hover {
+    border: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-item {
