@@ -445,6 +445,10 @@ body {
     display: block;
 }
 
+.header-element.current {
+    color: var(--darkblue-hover);
+}
+
 .menu-list {
     display: flex;
     gap: 40px;
