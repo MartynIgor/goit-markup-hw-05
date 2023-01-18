@@ -344,6 +344,7 @@ summary {
     --grey: #434455;
     --light-grey: #E7E9FC;
     --border: #8E8F99;
+    --green: #31D0AA;
 }
 
 img {
@@ -454,11 +455,6 @@ body {
     gap: 40px;
 }
 
-.header-menu:hover,
-.header-menu:focus {
-    color: var(--darkblue-hover);
-}
-
 .contacts-list {
     display: flex;
     flex-direction: row;
@@ -479,7 +475,9 @@ body {
 }
 
 .contacts:hover,
-.contacts:focus {
+.contacts:focus,
+.header-menu:hover,
+.header-menu:focus {
     color: var(--darkblue-hover);
 }
 
@@ -496,16 +494,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--grey);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
 
 .social-footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--grey);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
 }
 
 .sm-title {
@@ -549,6 +547,7 @@ body {
     padding-bottom: 188px;
     text-align: center;
     background-size: cover;
+    background-position: center;
     max-width: 1440px;
 }
 
@@ -627,17 +626,16 @@ body {
 }
 
 .underhero-icon {
-    max-width: 264px;
-    max-height: 112px;
+    height: 112px;
     background-color: var(--border-color);
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 24px 0;
 }
 
-.button-order:hover {
+.button-order:hover,
+.button-order:focus {
     background: var(--darkblue-hover);
 }
 
@@ -700,22 +698,6 @@ body {
     background: var(--blue);
     color: var(--white);
     border-color: transparent;
-}
-
-.pic-shadow:hover {
-    background: var(--blue);
-    background-blend-mode: soft-light;
-    mix-blend-mode: normal;
-    letter-spacing: 0.02em;
-    color: var(--border-color);
-}
-
-.pic-shadow {
-    background: var(--border-color);
-    background-blend-mode: soft-light;
-    mix-blend-mode: normal;
-    letter-spacing: 0.02em;
-    color: var(--blue);
 }
 
 .portfolio-photo {
@@ -822,6 +804,11 @@ body {
     border-radius: 50%;
 }
 
+.social:hover,
+.social:focus {
+    background-color: var(--darkblue-hover);
+}
+
 .social-all {
     display: flex;
     gap: 24px;
@@ -838,12 +825,6 @@ body {
 .socialicon-underhero {
     width: 64px;
     height: 64px;
-}
-
-.socialicon-footer {
-    width: 24px;
-    height: 24px;
-    fill: var(--grey);
 }
 
 .socialfooter-all {
@@ -881,26 +862,46 @@ body {
 
 .box-element {
     box-sizing: border-box;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
     border: 1px solid var(--border);
     border-radius: 4px;
-    Width: 168px;
-    Height: 88px;
     display: flex;
     justify-content: center;
-    /*центрируем элемент по горизонтали */
     align-items: center;
-    /* и вертикали */
     width: 168px;
     height: 88px;
-    overflow: hidden;
-    /* если элемент больше блока-родителя – обрезаем лишнее */
+    fill: var(--border);
+    background-color: #FFFFFF;
+}
+
+.box-element:hover,
+.box-element:focus {
+    fill: var(--darkblue-hover);
+    border-color: var(--darkblue-hover);
 }
 
 .icon {
     width: 104px;
     height: 56px;
+    fill: #31D0AA;
+}
+
+.icon:hover,
+.icon:focus {
+    fill: var(--darkblue-hover);
+}
+
+.svg-list {
+    color: aqua;
+    fill: aqua;
+}
+
+.socialicon-footer {
+    width: 24px;
+    height: 24px;
+    fill: var(--grey);
+}
+
+.footer-soc-icon:hover,
+.footer-soc-icon:focus {
+    background-color: var(--green);
 }
