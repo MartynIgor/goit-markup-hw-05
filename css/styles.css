@@ -695,9 +695,11 @@ body {
 .button-filter:hover,
 .button-filter:active,
 .button-filter:focus {
-    background: var(--blue);
+    background-color: var(--blue);
     color: var(--white);
     border-color: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 .portfolio-photo {
