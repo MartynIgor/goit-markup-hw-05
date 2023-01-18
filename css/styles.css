@@ -833,13 +833,13 @@ body {
     margin-top: 16px;
 }
 
-.section-costumers {
+.section-customers {
     padding-top: 130px;
     padding-bottom: 120px;
     text-align: center;
 }
 
-.section-text-costumers {
+.section-text-customers {
     margin: 0;
     font-family: 'Roboto', Sans-serif;
     font-style: normal;
@@ -882,7 +882,6 @@ body {
 .icon {
     width: 104px;
     height: 56px;
-    fill: #31D0AA;
 }
 
 .icon:hover,
@@ -890,10 +889,7 @@ body {
     fill: var(--darkblue-hover);
 }
 
-.svg-list {
-    color: aqua;
-    fill: aqua;
-}
+.svg-list {}
 
 .socialicon-footer {
     width: 24px;
