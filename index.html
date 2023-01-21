@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="./css/modern-normalize.css">
     <link href="./css/styles.css" rel="stylesheet">
 </head>
 
@@ -22,9 +22,9 @@
                 </a>
                 <nav class="header-main-block">
                     <ul class="menu-list">
-                        <li class="header-element"><a class="header-menu" href="index.html">Studio</a></li>
-                        <li class="header-element"><a class="header-menu" href="portfolio.html">Portfolio</a></li>
-                        <li class="header-element"><a class="header-menu" href="/">Contacts</a></li>
+                        <li class="header-element"><a class="header-menu current" href="index.html">Studio</a></li>
+                        <li class="header-element"><a class="header-menu " href="portfolio.html">Portfolio</a></li>
+                        <li class="header-element"><a class="header-menu " href="/">Contacts</a></li>
                     </ul>
                 </nav>
                 <ul class="contacts-list">
@@ -34,17 +34,15 @@
             </div>
         </div>
     </header>
-
     <main>
         <section class="hero-background">
             <div class="container">
                 <div class="hero-text">
                     <h1 class="hero">Effective Solutions for Your Business</h1>
-                    <button class="button-order" type="button">Order Service</button>
+                    <button class="button-order" type="button" data-modal-open>Order Service</button>
                 </div>
             </div>
         </section>
-
 
         <section class="section-hero">
             <div class="container">
@@ -252,6 +250,18 @@
             </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal="">
+        <div class="modal">
+            <button type="button" class="btn-close" data-modal-close="">
+                <svg class="close" width="24" height="24">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
