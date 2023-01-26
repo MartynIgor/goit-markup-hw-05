@@ -433,7 +433,7 @@ body {
 .portfolio-link {
     display: block;
     box-shadow: 0px 1px 6px rgb(46 47 66 / 8%);
-    transition-property: transform, box-shadow;
+    transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -443,11 +443,13 @@ body {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-link:hover .project-text-box {
+.portfolio-link:hover .project-text-box,
+.portfolio-link:focus .project-text-box {
     transform: translateY(0%);
 }
 
-.portfolio-link:hover .project-text {
+.portfolio-link:hover .project-text,
+.portfolio-link:focus .project-text {
     transform: translateY(0%);
 }
 
@@ -667,9 +669,6 @@ body {
 .icon {
     width: 104px;
     height: 56px;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon:hover,
@@ -707,21 +706,25 @@ body {
     transition-property: fill, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    fill: var(--dark);
 }
 
 .btn-close:focus,
 .btn-close:hover {
     background-color: var(--darkblue-hover);
-}
-
-.btn-close:focus>.close,
-.btn-close:hover>.close {
     fill: var(--white);
 }
 
-.close {
+
+/* .btn-close:focus>.close,
+.btn-close:hover>.close {
+    fill: var(--white);
+} */
+
+
+/* .close {
     fill: var(--dark);
-}
+} */
 
 .backdrop {
     position: fixed;
