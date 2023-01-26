@@ -109,7 +109,7 @@ body {
     line-height: 1.5;
     font-family: 'Roboto', Sans-serif;
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 28px;
     display: block;
     transition-property: color;
     transition-duration: 250ms;
@@ -244,6 +244,7 @@ body {
     width: 494px;
     margin: 0 auto;
     text-align: center;
+    font-style: normal;
 }
 
 .socials {
@@ -696,8 +697,8 @@ body {
     background-color: var(--light-grey);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    right: 32px;
-    top: 32px;
+    right: 24px;
+    top: 24px;
     cursor: pointer;
     display: flex;
     align-items: center;
